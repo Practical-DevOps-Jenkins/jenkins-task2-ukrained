@@ -20,7 +20,6 @@ pipeline {
             parallel {
 
                 stage('Running Application') {
-                    agent any
                     steps {
                         script {
                             try {
