@@ -23,7 +23,8 @@ pipeline {
                             try {
                                 timeout(time: 60, unit: 'SECONDS') {
                                     dir('target') {
-                                        sh 'java -jar target/contact.war'
+                                        sh 'ls -al'
+                                        sh 'java -jar contact.war'
                                     }
                                 }
                             } catch (err) {
